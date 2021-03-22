@@ -8,7 +8,8 @@ public class MeanCounter {
 		int b = 30;
 		int c = 40;
 		
-		ArithmeticMeanAlgorithm meanAlgorithm = new ArithmeticMeanAlgorithm();
+		// najpierw deklaruje referencja (typ + nazwa obiektu)
+		ArithmeticMeanAlgorithm meanAlgorithm = new ArithmeticMeanAlgorithm(); 
 		meanAlgorithm.add(a);
 		meanAlgorithm.add(b);
 		meanAlgorithm.add(c);
