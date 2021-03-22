@@ -19,7 +19,7 @@ public class GeometricMeanAlgorithm implements MeanAlgorithm {
 		}
 		
 		public double calculateMean() {
-			return Math.pow(currentSum, calculateMean)
+			return Math.pow(currentSum, (double) 1 / noOfFactors);
 		}
 		
 		return 0;

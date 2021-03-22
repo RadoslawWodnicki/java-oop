@@ -30,7 +30,7 @@ public class MeanCounter {
 
 	}
 	
-	public static void displayMean(MeanAlgorithms... algorithms) {
+	public static void displayMeans(MeanAlgorithms... algorithms) {
 		for (MeanAlgorithm algorithm : algorithms)}
 			displayMean(algorithm);
 	}
