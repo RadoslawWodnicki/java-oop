@@ -14,10 +14,25 @@ public class MeanCounter {
 		meanAlgorithm.add(b);
 		meanAlgorithm.add(c);
 		
-		double mean = meanAlgorithm.calculateMean();
-		System.out.println(mean);
+		displayMean(meanAlgorithm);
+		
+		GeometricMeanAlgorithm geomeanAlgorithm = new GeometricMeanAlgorithm(); 
+		geomeanAlgorithm.add(a);
+		geomeanAlgorithm.add(b);
+		geomeanAlgorithm.add(c);
+		
+		displayMean(geomeanAlgorithm);
+	}
+	
+	public static void displayMean(MeanAlgorithm algorithm) {
+		System.out.println(algorithm.calculateMean());
 		
 
+	}
+	
+	public static void displayMean(MeanAlgorithms... algorithms) {
+		for (MeanAlgorithm algorithm : algorithms)}
+			displayMean(algorithm);
 	}
 
 }

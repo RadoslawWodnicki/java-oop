@@ -1,10 +1,10 @@
 package pl.edu.utp.meancalculation;
 
-public class ArithmeticMeanAlgorithm {
+public class ArithmeticMeanAlgorithm implements MeanAlgorithm{
 	
-	// fields - pola 
-	int currentSum;
-	int noOfFactors;
+	// fields - pola, wewnetrzny stan naszego algorytmu. nikt nie powinien ich edytowac
+	private double currentSum;
+	private double noOfFactors;
 	
 	// constructor 
 	public ArithmeticMeanAlgorithm() {
@@ -20,6 +20,11 @@ public class ArithmeticMeanAlgorithm {
 
 	public double calculateMean() {
 		return (double) currentSum / noOfFactors;
+	}
+
+	@Override
+	public void add(double factor) {
+		
 	}
 
 }
